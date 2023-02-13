@@ -5,33 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-      ul>li {
-          cursor: pointer;
-          width: 200px;
-      }
-
-      .selected {
-          background-color: pink;
-      }
-    </style>
-    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="scripts/scripts.js"></script>
 </head>
 
 <body>
-    <div id="menu">
-        <button data-action="save">Save</button>
-        <button data-action="load">Upload</button>
-        <button data-action="search">Search</button>
+    <div class="container">
+        <div class="content">
+            <div id="menu">
+                <button class="btn" data-action="addBeggining">Add at beggining</button>
+                <button class="btn" data-action="addEnd">Add at end</button>
+                <button class="btn" data-action="removeSelected">Remove selected</button>
+                <button class="btn" data-action="sort">Sort</button>
+            </div>
+            <h1>Daily tasks</h1>
+            <ul id="ul">
+                <li>Go to a shop</li>
+                <li>Read a book</li>
+                <li>Phone to a friend</li>
+                <li>Get some work</li>
+                <li>Meet guests</li>
+            </ul>
+        </div>
     </div>
-    <h1>Daily tasks</h1>
-    <ul id="ul">
-        <li>Go to a shop</li>
-        <li>Read a book</li>
-        <li>Phone to a friend</li>
-        <li>Get some work</li>
-        <li>Meet guests</li>
-    </ul>
 </body>
 
 </html>

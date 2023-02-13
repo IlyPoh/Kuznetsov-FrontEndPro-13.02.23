@@ -1,0 +1,41 @@
+body {
+    background: $color-black;
+    font-family: sans-serif;
+    color: $color-white;
+    margin: 0;
+    height: 100vh;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+.content {
+    padding: 20px 0;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+h2 {
+    margin-top: 0;
+}
+ul {
+    list-style: none;
+    padding-left: 10px;
+    font-size: 18px;
+
+    li {
+        border-left: 3px solid $color-white;
+        margin-bottom: 5px;
+        padding: 5px 0 5px 10px;
+        cursor: pointer;
+        max-width: 200px;        
+    }
+}
+.selected {
+    background-color: $color-opacity-grey;
+    border-left: 3px solid $color-pink;
+}
